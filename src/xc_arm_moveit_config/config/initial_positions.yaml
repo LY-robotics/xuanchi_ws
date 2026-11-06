@@ -1,0 +1,15 @@
+# Default initial positions for XC's ros2_control fake system
+
+initial_positions:
+  Joint1: 0
+  Joint2: 0
+  left_arm_Joint1: 0
+  left_arm_Joint2: 0
+  left_arm_Joint3: 0
+  left_arm_Joint4: 0
+  left_arm_Joint5: 0
+  right_arm_Joint1: 0
+  right_arm_Joint2: 0
+  right_arm_Joint3: 0
+  right_arm_Joint4: 0
+  right_arm_Joint5: 0

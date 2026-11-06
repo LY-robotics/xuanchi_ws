@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="XC">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import XC urdf file -->
+    <xacro:include filename="$(find xc_arm_description)/urdf/XC_urdf.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="XC.ros2_control.xacro" />
+
+
+    <xacro:XC_ros2_control right_arm_name="RightArmSystem" left_arm_name="LeftArmSystem" head_name="HeadGimbalSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

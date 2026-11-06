@@ -1,0 +1,102 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    head_group_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    # both_arms_controller:
+    #   type: joint_trajectory_controller/JointTrajectoryController
+
+
+    # upper_body_controller:
+    #   type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - right_arm_Joint1
+      - right_arm_Joint2
+      - right_arm_Joint3
+      - right_arm_Joint4
+      - right_arm_Joint5
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+left_arm_controller:
+  ros__parameters:
+    joints:
+      - left_arm_Joint1
+      - left_arm_Joint2
+      - left_arm_Joint3
+      - left_arm_Joint4
+      - left_arm_Joint5
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+head_group_controller:
+  ros__parameters:
+    joints:
+      - Joint1
+      - Joint2
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+# both_arms_controller:
+#   ros__parameters:
+#     joints:
+#       - left_arm_Joint1
+#       - left_arm_Joint2
+#       - left_arm_Joint3
+#       - left_arm_Joint4
+#       - left_arm_Joint5
+#       - right_arm_Joint1
+#       - right_arm_Joint2
+#       - right_arm_Joint3
+#       - right_arm_Joint4
+#       - right_arm_Joint5
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
+# upper_body_controller:
+#   ros__parameters:
+#     joints:
+#       - Joint1
+#       - Joint2
+#       - left_arm_Joint1
+#       - left_arm_Joint2
+#       - left_arm_Joint3
+#       - left_arm_Joint4
+#       - left_arm_Joint5
+#       - right_arm_Joint1
+#       - right_arm_Joint2
+#       - right_arm_Joint3
+#       - right_arm_Joint4
+#       - right_arm_Joint5
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity

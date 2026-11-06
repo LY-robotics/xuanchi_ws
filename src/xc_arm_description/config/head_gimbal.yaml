@@ -1,0 +1,35 @@
+# 头部云台 V2.36 配置模板。
+# gear_ratio、max_speed_dps 和 joint name 必须在实机和 URDF 核对后填写。
+# 0.0 是故意的占位值，配置校验会拒绝它，不能直接上电。
+hardware:
+  protocol: lingkong_v2_36
+  can_interface: can2
+  bitrate: 1000000
+  feedback_rate_hz: 20
+  state_timeout_ms: 250
+  response_timeout_ms: 500
+  command_rate_limit_hz: 0
+  deactivate_action: none
+  joints:
+    - name: REPLACE_WITH_ACTUAL_YAW_JOINT_NAME
+      motor_id: 1
+      gear_ratio: 0.0
+      direction: 1
+      joint_offset_rad: 0.0
+      max_speed_dps: 0.0
+      has_brake: false
+      brake_release_on_activate: false
+      brake_engage_on_deactivate: false
+      brake_engage_on_error: false
+      verify_brake_state: false
+    - name: REPLACE_WITH_ACTUAL_PITCH_JOINT_NAME
+      motor_id: 2
+      gear_ratio: 0.0
+      direction: 1
+      joint_offset_rad: 0.0
+      max_speed_dps: 0.0
+      has_brake: true
+      brake_release_on_activate: true
+      brake_engage_on_deactivate: true
+      brake_engage_on_error: true
+      verify_brake_state: true
