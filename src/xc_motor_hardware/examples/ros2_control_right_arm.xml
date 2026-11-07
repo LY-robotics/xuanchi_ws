@@ -1,0 +1,11 @@
+<ros2_control name="XCArmSystem" type="system">
+  <hardware>
+    <plugin>xc_motor_hardware/SanpoCanSystem</plugin>
+    <param name="config_file">/absolute/path/to/xc_motor_hardware/config/right_arm.yaml</param>
+  </hardware>
+  <joint name="Joint1"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+  <joint name="Joint2"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+  <joint name="Joint3"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+  <joint name="Joint4"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+  <joint name="Joint5"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+</ros2_control>

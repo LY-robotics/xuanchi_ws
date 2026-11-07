@@ -6,9 +6,7 @@
         <ros2_control name="${right_arm_name}" type="system">
             <hardware>
                 <plugin>xc_motor_hardware/SanpoCanSystem</plugin>
-                <param name="config_file">
-                  /home/dyf/xuanchi_ws/src/xc_arm_description/config/right_arm.yaml
-                </param>
+                <param name="config_file">/home/dyf/xuanchi_ws/src/xc_arm_description/config/right_arm.yaml</param>
 
                 <!-- By default, set up controllers for simulation. This won't work on real hardware -->
                 <!-- <plugin>mock_components/GenericSystem</plugin> -->
@@ -53,9 +51,7 @@
         <ros2_control name="${left_arm_name}" type="system">
             <hardware>
               <plugin>xc_motor_hardware/SanpoCanSystem</plugin>
-              <param name="config_file">
-                /home/dyf/xuanchi_ws/src/xc_arm_description/config/left_arm.yaml
-              </param>
+              <param name="config_file">/home/dyf/xuanchi_ws/src/xc_arm_description/config/left_arm.yaml</param>
             </hardware>
             <joint name="left_arm_Joint1">
                 <command_interface name="position"/>

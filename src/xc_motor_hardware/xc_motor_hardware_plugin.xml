@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<library path="xc_motor_hardware">
+  <class name="xc_motor_hardware/SanpoCanSystem"
+         type="xc_motor_hardware::SanpoCanSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>通用 SANPO V3.07b0 CAN 电机 ros2_control SystemInterface</description>
+  </class>
+</library>

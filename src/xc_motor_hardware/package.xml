@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>xc_motor_hardware</name>
+  <version>0.1.0</version>
+  <description>玄尺机械臂 SANPO 自定义 CAN V3.07b0 ros2_control 硬件接口</description>
+  <maintainer email="xuanchi@163.com">xuanchi</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>yaml_cpp_vendor</depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
